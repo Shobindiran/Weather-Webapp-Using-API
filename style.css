@@ -57,11 +57,12 @@
 
 /* error starts */
 .error>p{
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: 20px;
     padding-inline: 10px;
     font-weight: 500;
     display: none;
+    margin-top: 20px;
 }
 /* error ends */
 
