@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+    height:100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b0dff2;
+}
+
+.card-wrapper{
+    background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+    border-radius:20px;
+    padding:20px;
+    box-shadow: 0px 0px 41px -8px #39ddfa;
+}
+
+/* search starts */
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.search>input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 30px;
+    padding-inline:10px;
+    height: 40px;
+    width: 100%;
+}
+
+.search>input::placeholder{
+    font-size: 16px;
+}
+
+.search>button{
+    border:none;
+    background-color:white;
+    padding: 11px;
+    border-radius: 50%;
+}
+
+.search>button>img{
+    width:20px;
+}
+/* search ends */
+
+/* error starts */
+.error>p{
+    color: red;
+    font-size: 20px;
+    padding-inline: 10px;
+    font-weight: 500;
+    display: none;
+}
+/* error ends */
+
+/* weather starts */
+.weather{
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.weather>img{
+    width: 150px;
+}
+
+.weather>h1{
+    font-size:50px;
+    line-height: 50px;
+}
+
+.weather>h2{
+    font-size: 35px;
+}
+/* weather ends */
+
+/* details starts */
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.details>div{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.details>div>div:first-child>img{
+    width:40px;
+}
+
+.details>div>div:last-child>h3{
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.details>div>div:last-child>h4{
+    font-size: 14px;
+    font-weight: 400;
+}
+/* details ends */
+
+/* media queries */
+@media only screen and (max-width: 350px){
+    
+
+    .details{
+        gap: 10px;
+    }
+
+    .details>div>div:first-child>img{
+        width:35px;
+    }
+
+    .details>div>div:last-child>h3{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    .details>div>div:last-child>h4{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 300px){
+
+    .details{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details>div{
+        min-width: 140px;
+    }
+
+}
+
